@@ -121,9 +121,9 @@ export default function Home() {
   
 
   
-      {/* <TeamSection team={boardMembers} />
+      <TeamSection team={boardMembers} />
         <Button linkTo="/team" text="View more" rounded={true} />
-        <SectionDividerLine/> */}
+        <SectionDividerLine/>
 
 
         <section id="faqs" className="">
