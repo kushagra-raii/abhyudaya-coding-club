@@ -86,12 +86,17 @@ export default function Home() {
         </div>
         <SectionDividerLine />
       </section>
-      <section id="aboutCollege" className=" w-11/12 mx-auto ">
-        <h1 className=" font-bold text-4xl">About college</h1>
-        <div className="flex gap-10">
-          <Image src={photo} alt="" />
-          <div className="flex flex-col gap-10">
-            <h2 className=" text-3xl font-semibold">
+
+      <section id="aboutCollege" className=" w-10/12 mx-auto flex flex-col items-center gap-8">
+        <h1 className={`${turret.className} font-extrabold text-4xl`}>About college</h1>
+        <div className="flex gap-20 justify-center items-start flex-wrap">
+          
+         <div className="lg:w-[45%] h-[400px] border-8  rounded-3xl p-2 mt-2 " >
+         <Image src={photo} alt="" />
+         </div>
+          
+          <div className="flex flex-col gap-10 lg:w-[45%] px-10">
+            <h2 className={`text-2xl font-semibold `} >
               Shri Vaishnav Vidyapeeth Vishwavidyalaya
             </h2>
             <p>
