@@ -122,12 +122,14 @@ export default function Home() {
 
   
       <TeamSection team={boardMembers} />
+        <div className="flex justify-center">
         <Button linkTo="/team" text="View more" rounded={true} />
+        </div>
         <SectionDividerLine/>
 
 
-        <section id="faqs" className="">
-        <h1 className="mx-auto text-3xl font-bold">FAQs</h1>
+        <section id="faqs" className="flex flex-col items-center gap-4">
+        <h1 className={`mx-auto text-3xl font-bold ${turret.className}`}>FAQs</h1>
         <Faqs />
       </section>
     </main>
