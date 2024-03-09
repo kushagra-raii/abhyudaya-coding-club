@@ -19,7 +19,7 @@ import { Turret_Road } from "next/font/google";
 import DomainRow from "@/components/DomainRow";
 import domainsGradient from "@/../public/assets/ellipse/domainsEllipse.svg";
 
-const turret = Turret_Road({
+export const turret = Turret_Road({
   weight: '800',
   subsets: ['latin'],
 });
@@ -114,17 +114,19 @@ export default function Home() {
         </div>
         <SectionDividerLine />
       </section>
+
+
       <FacultySection faculties={collegeManagement} />
       <FacultySection faculties={coordinators} />
   
 
   
-      <TeamSection team={boardMembers} />
+      {/* <TeamSection team={boardMembers} />
         <Button linkTo="/team" text="View more" rounded={true} />
-        <SectionDividerLine/>
+        <SectionDividerLine/> */}
 
 
-      <section id="faqs" className="">
+        <section id="faqs" className="">
         <h1 className="mx-auto text-3xl font-bold">FAQs</h1>
         <Faqs />
       </section>
