@@ -4,8 +4,6 @@ import { events } from "../../../public/data/upcomingEvent";
 import photo from "@/../public/assets/domain/image.svg";
 import DomainCard from "@/components/DomainCard";
 import Button from "@/components/Button";
-// import  from "@/components/SectionDifferingLine";
-// import Sec from "@/components/SectionDifferingLine";
 import SectionDividerLine from "@/components/SectionDividerLine";
 import EventCard from "@/components/EventCard";
 import ProjectCarausal from "@/components/ProjectCarausal";

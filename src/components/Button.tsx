@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import cx from "classnames";
 
 type ButtonProps = {
   text: string;
@@ -8,12 +9,29 @@ type ButtonProps = {
 };
 
 const Button = ({ text, linkTo, rounded }: ButtonProps) => {
+  const buttonClasses = cx({
+    "rounded-full": rounded,
+    "rounded-xl": !rounded,
+    "bg-teal-600": true,
+    "cursor-pointer": true,
+    "text-center": true,
+    "text-[13px]": true,
+    "sm:text-[16px]": true,
+    "px-6": true,
+    "py-3": true,
+    "font-bold": true,
+    "shadow-[2px_2px_0px_0px_rgba(255, 255, 255, 0.18)]": true,
+    "hover:shadow-none": true,
+    "hover:scale-95": true,
+    "transition-all": true,
+    "duration-200": true,
+    
+  });
+
   return (
     <Link
       href={linkTo}
-      className={`${
-        rounded ? "rounded-full" : " rounded-xl "
-      } bg-teal-600 cursor-pointer text-center text-[13px] sm:text-[16px] px-6 py-3  font-bold shadow-[2px_2px_0px_0px_rgba(255,255,255,0.18)] hover:shadow-none hover:scale-95 transition-all duration-200`}
+      className={buttonClasses}
     >
       {text}
     </Link>
