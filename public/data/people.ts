@@ -1,12 +1,12 @@
-import vcImage from "./../assets/domain/image.svg";
-import hodImage from "./../assets/domain/image.svg";
-import coordinator1 from "./../assets/domain/image.svg";
-import coordinator2 from "./../assets/domain/image.svg";
-import coordinator3 from "./../assets/domain/image.svg";
-import mentorImg from "./../assets/domain/image.svg";
+import vcImage from "./../assets/faculty/Naman.svg";
+import hodImage from "./../assets/faculty/Naman.svg";
+import coordinator1 from "./../assets/faculty/Naman.svg";
+import coordinator2 from "./../assets/faculty/Naman.svg";
+import coordinator3 from "./../assets/faculty/Naman.svg";
+import mentorImg from "./../assets/faculty/Naman.svg";
 import presidentImg from "./../assets/domain/image.svg";
 import vicePresidentImg from "./../assets/domain/image.svg";
-import secretaryImg from "./../assets/domain/image.svg";
+import secretaryImg from "./../assets/technical/Yashraj.svg";
 import tresurerImg from "./../assets/domain/image.svg";
 
 interface Person {
@@ -60,13 +60,13 @@ export const coordinators: Array<Person> = [
 export const boardMembers: Array<Person> = [
   {
     id: 1,
-    img: presidentImg,
+    img: secretaryImg,
     name: "Shivam Sharma",
     post: "President",
   },
   {
     id: 2,
-    img: vicePresidentImg,
+    img: secretaryImg,
     name: "Tanay Nagde",
     post: "Vice President",
   },
@@ -78,7 +78,7 @@ export const boardMembers: Array<Person> = [
   },
   {
     id: 4,
-    img: tresurerImg,
+    img: secretaryImg,
     name: "Aditya Tiwari",
     post: "Tresurer",
   },
