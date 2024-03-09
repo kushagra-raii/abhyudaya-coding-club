@@ -20,7 +20,7 @@ const ProjectCard = ({ project }: Props) => {
         {desc && <p>{desc}</p>}
         <p>Features :-</p>
         <ol>
-          {features.map((points, index) => (
+          {features?.map((points, index) => (
             <li key={index}>{points}</li>
           ))}
         </ol>

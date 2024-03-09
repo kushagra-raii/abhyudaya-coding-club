@@ -19,7 +19,7 @@ const ProjectCarausal = () => {
   return (
     <Slider {...settings}>
        {
-        projects.map((project) => {
+        projects?.map((project) => {
             return <ProjectCard key={project.id} project={project} />
         })
        }

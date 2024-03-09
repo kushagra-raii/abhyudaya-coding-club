@@ -10,7 +10,7 @@ const Faqs = () => {
   return (
     <div className='flex flex-col gap-5'>
         {
-            faqs.map((item)=>(<FaqCard current={current} setCurrent={setCurrent} key={item.id} question={item}/>))
+            faqs?.map((item)=>(<FaqCard current={current} setCurrent={setCurrent} key={item.id} question={item}/>))
         }
     </div>
   )
