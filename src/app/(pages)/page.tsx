@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { domain } from "../../../public/data/domain";
+import { domainFirstLine, domainSecondLine } from "../../../public/data/domain";
 import { events } from "../../../public/data/upcomingEvent";
 import photo from "@/../public/assets/domain/image.svg";
 import DomainCard from "@/components/DomainCard";
@@ -15,23 +15,24 @@ import {
 } from "@/../public/data/people";
 import Faqs from "@/components/Faqs";
 import TeamSection from "@/components/TeamSection";
-// import TurretRoad from "@next/font/google/Turret+Road";
+import { Turret_Road } from "next/font/google";
+import DomainRow from "@/components/DomainRow";
+import domainsGradient from "@/../public/assets/ellipse/domainsEllipse.svg";
+
+const turret = Turret_Road({
+  weight: '800',
+  subsets: ['latin'],
+});
+
 
 export default function Home() {
-  const setting = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  };
-
+  
   return (
     <main className="bg-rich-blue-bg w-full  text-white">
       <section id="hero" className=" w-11/12 mx-auto p-5 pt-11 ">
-        <div className="flex gap-10 ">
-          <div className=" w-[60%] flex flex-col gap-5">
-            <h1 className={`text-4xl myShadow text-primary-heading`}>
+        <div className="flex lg:flex-row flex-col gap-10 ">
+          <div className=" lg:w-[60%] flex flex-col gap-5">
+            <h1 className={` font-extrabold text-4xl ${turret.className} myShadow  text-primary-heading`}>
               Abhyudaya - Coding club
             </h1>
             <p className=" text-3xl  leading-[45.8px]">
@@ -51,18 +52,20 @@ export default function Home() {
         </div>
         <SectionDividerLine />
       </section>
+      
+
       <section
         id="domain"
-        className="w-11/12 mx-auto p-5 pt-11 flex flex-col items-center"
+        className="relative  w-11/12 mx-auto p-5 pt-11 flex flex-col items-center"
       >
         <h1 className=" text-4xl font-bold">Our Domains</h1>
-        <div className="grid grid-cols-3 mt-10 w-full  mx-auto  justify-items-center  items-center  p-5 gap-5">
-          {domain?.map((item) => {
-            return <DomainCard key={item.id} domain={item} />;
-          })}
+        <div className="flex z-10 flex-col mt-10 w-full  mx-auto  justify-items-center  items-center  p-5 gap-5">
+          <DomainRow domainArr={domainFirstLine}/>
+          <DomainRow domainArr={domainSecondLine}/>
         </div>
         <Button text="View More" rounded={true} linkTo="/" />
         <SectionDividerLine />
+        <div className="shapeAtDomain"></div>
       </section>
       <section
         id="events"
@@ -80,16 +83,6 @@ export default function Home() {
               />
             );
           })}
-        </div>
-        <SectionDividerLine />
-      </section>
-      <section id="projects" className=" w-10/12 mx-auto flex flex-col gap-10">
-        <h1 className=" text-4xl font-bold mx-auto">Projects</h1>
-        <div>
-          <ProjectCarausal />
-        </div>
-        <div className=" mx-auto">
-          <Button text="View More" rounded={true} linkTo="/" />
         </div>
         <SectionDividerLine />
       </section>
@@ -120,11 +113,10 @@ export default function Home() {
       <FacultySection faculties={coordinators} />
   
 
-      <div>
-        <TeamSection team={boardMembers} />
+  
+      <TeamSection team={boardMembers} />
         <Button linkTo="/team" text="View more" rounded={true} />
         <SectionDividerLine/>
-      </div>
 
 
       <section id="faqs" className="">

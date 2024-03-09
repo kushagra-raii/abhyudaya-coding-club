@@ -1,6 +1,6 @@
 import React from 'react'
-import a from "@/../public/assets/domain/image.svg"
 import Image from 'next/image'
+import cx from 'classnames'
 
 interface DomainCardProps {
     domain: {
@@ -11,11 +11,16 @@ interface DomainCardProps {
 }
  
 const DomainCard = ({domain}:DomainCardProps) => {
+ 
   return (
-    <div className=' rounded-xl flex flex-col bg-white text-black '>
-        <Image className='' src={a} alt=''/>
-        <p className='  h-11'>{domain.name}</p>
-    </div>
+
+  <div className='flex items-center  flex-col'>
+     <Image height={550} className=' w-fit  rounded-t-lg' src={domain.img} alt={domain.name}/>
+     <div className='bg-white text-black rounded-b-lg w-full p-5 opacity-40'>
+
+      <p className='text-center' >{domain.name}</p>
+     </div>
+ </div>
   )
 }
 
