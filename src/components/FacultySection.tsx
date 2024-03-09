@@ -1,6 +1,6 @@
 import React from 'react'
 import FacultyCard from './FacultyCard'
-import Line from './Line'
+import SectionDividerLine from './SectionDividerLine'
 type Person  = {
     id: number;
     img: string;
@@ -21,7 +21,7 @@ const FacultySection = ({faculties}:FacultySectionProps) => {
         <FacultyCard key={person.id} person={person} />
       ))}
     </div>
-    <Line />
+    <SectionDividerLine />
   </section>
   )
 }

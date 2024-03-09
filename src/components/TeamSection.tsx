@@ -1,6 +1,6 @@
 import React from 'react'
 import TeamCard from './TeamCard';
-import Line from './Line'
+
 type Person  = {
     id: number;
     img: string;

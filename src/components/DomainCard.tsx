@@ -2,7 +2,7 @@ import React from 'react'
 import a from "@/../public/assets/domain/image.svg"
 import Image from 'next/image'
 
-interface props {
+interface DomainCardProps {
     domain: {
         id: number;
         name: string;
@@ -10,7 +10,7 @@ interface props {
     }
 }
  
-const DomainCard = ({domain}:props) => {
+const DomainCard = ({domain}:DomainCardProps) => {
   return (
     <div className=' rounded-xl flex flex-col bg-white text-black '>
         <Image className='' src={a} alt=''/>

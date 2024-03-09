@@ -18,7 +18,7 @@ const config: Config = {
           bg: "#0F1437",
           bgDark: "#080D51",
           border: "#194EEF",
-          line:"#7BE5E1"
+          lightLine:"#7BE5E1"
         },
         primary: {
           heading: "#EBFF00",

@@ -2,13 +2,13 @@ import React from 'react'
 import Button from './Button'
 import Image from 'next/image'
 
-type Props = {
+type EventCardProps = {
     heading: string,
     desc: string,
     img: string
 }
 
-const EventCard = ({heading,desc,img}:Props) => {
+const EventCard = ({heading,desc,img}:EventCardProps) => {
   return (
     <div className='flex gap-6'>
         <div>

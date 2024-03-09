@@ -4,7 +4,9 @@ import { events } from "../../../public/data/upcomingEvent";
 import photo from "@/../public/assets/domain/image.svg";
 import DomainCard from "@/components/DomainCard";
 import Button from "@/components/Button";
-import Line from "@/components/Line";
+// import  from "@/components/SectionDifferingLine";
+// import Sec from "@/components/SectionDifferingLine";
+import SectionDividerLine from "@/components/SectionDividerLine";
 import EventCard from "@/components/EventCard";
 import ProjectCarausal from "@/components/ProjectCarausal";
 import FacultySection from "@/components/FacultySection";
@@ -49,7 +51,7 @@ export default function Home() {
             <Image loading="lazy" src={photo} alt="abhyudaya" />
           </div>
         </div>
-        <Line />
+        <SectionDividerLine />
       </section>
       <section
         id="domain"
@@ -62,7 +64,7 @@ export default function Home() {
           })}
         </div>
         <Button text="View More" rounded={true} linkTo="/" />
-        <Line />
+        <SectionDividerLine />
       </section>
       <section
         id="events"
@@ -81,7 +83,7 @@ export default function Home() {
             );
           })}
         </div>
-        <Line />
+        <SectionDividerLine />
       </section>
       <section id="projects" className=" w-10/12 mx-auto flex flex-col gap-10">
         <h1 className=" text-4xl font-bold mx-auto">Projects</h1>
@@ -91,7 +93,7 @@ export default function Home() {
         <div className=" mx-auto">
           <Button text="View More" rounded={true} linkTo="/" />
         </div>
-        <Line />
+        <SectionDividerLine />
       </section>
       <section id="aboutCollege" className=" w-11/12 mx-auto ">
         <h1 className=" font-bold text-4xl">About college</h1>
@@ -114,16 +116,16 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <Line />
+        <SectionDividerLine />
       </section>
       <FacultySection faculties={collegeManagement} />
       <FacultySection faculties={coordinators} />
   
-  
+
       <div>
         <TeamSection team={boardMembers} />
         <Button linkTo="/team" text="View more" rounded={true} />
-        <Line/>
+        <SectionDividerLine/>
       </div>
 
 

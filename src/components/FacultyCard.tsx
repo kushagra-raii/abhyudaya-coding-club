@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-interface Prop {
+interface FacultyCardProp {
   person: { id: number; img: string; name: string; post: string };
 }
 
-const FacultyCard = ({ person }: Prop) => {
+const FacultyCard = ({ person }: FacultyCardProp) => {
   const { img, name, post } = person;
   return (
     <div className="flex flex-col gap-3">

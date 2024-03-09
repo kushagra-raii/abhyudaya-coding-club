@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-type Props = {
+type ProjectCardProps = {
   project: {
     id: number;
     heading: string;
@@ -10,7 +10,7 @@ type Props = {
     desc?: string;
   };
 };
-const ProjectCard = ({ project }: Props) => {
+const ProjectCard = ({ project }: ProjectCardProps) => {
     const {heading,img,desc,features}= project;
   return (
     <div>

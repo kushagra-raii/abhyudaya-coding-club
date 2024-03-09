@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-type Props = {
+type ButtonProps = {
   text: string;
   linkTo: string;
   rounded: boolean;
 };
 
-const Button = ({ text, linkTo, rounded }: Props) => {
+const Button = ({ text, linkTo, rounded }: ButtonProps) => {
   return (
     <Link
       href={linkTo}

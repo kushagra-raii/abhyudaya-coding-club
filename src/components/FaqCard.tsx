@@ -6,23 +6,23 @@ type Props = {
     ques: string;
     desc: string;
   };
-  current: number;
-  setCurrent: Dispatch<SetStateAction<number>>;
+  currentQuestion: number;
+  setCurrentQuestion: Dispatch<SetStateAction<number>>;
 };
 
-const FaqCard = ({ question, current, setCurrent }: Props) => {
+const FaqCard = ({ question, currentQuestion, setCurrentQuestion }: Props) => {
   const onClickHandler = () => {
-    if (question.id === current) {
-        setCurrent(0);
+    if (question.id === currentQuestion) {
+        setCurrentQuestion(0);
         return;
     }
-    setCurrent(question.id);
+    setCurrentQuestion(question.id);
   };
   return <div onClick={onClickHandler}>
     <div>
     {question.ques}
     </div>
-    <div className={`${question.id === current ? "" : "none" } `}>
+    <div className={`${question.id === currentQuestion ? "" : "none" } `}>
         {question.desc}
     </div>
   </div>;
