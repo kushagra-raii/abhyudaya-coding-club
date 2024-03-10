@@ -20,11 +20,7 @@ const Button = ({ text, linkTo, rounded }: ButtonProps) => {
     "px-6": true,
     "py-3": true,
     "font-bold": true,
-    "shadow-[2px_2px_0px_0px_rgba(255, 255, 255, 0.18)]": true,
-    "hover:shadow-none": true,
-    "hover:scale-95": true,
-    "transition-all": true,
-    "duration-200": true,
+    "bg-gradient-to-r from-purple-700 to-teal-500": true,
   });
 
   return (
