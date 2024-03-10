@@ -67,12 +67,14 @@ export default function Home() {
         <SectionDividerLine />
         <div className="shapeAtDomain"></div>
       </section>
+
+
       <section
         id="events"
-        className="w-11/12 mx-auto p-5 flex flex-col items-center gap-9"
+        className="w-10/12 mx-auto p-5 flex flex-col items-center gap-9"
       >
-        <h1 className=" text-4xl font-bold">Upcoming Events</h1>
-        <div>
+        <h1 className={`text-4xl font-extrabold ${turret.className}`}>Upcoming Events</h1>
+        <div className="flex justify-center ">
           {events?.map((item) => {
             return (
               <EventCard
