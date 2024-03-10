@@ -25,14 +25,10 @@ const Button = ({ text, linkTo, rounded }: ButtonProps) => {
     "hover:scale-95": true,
     "transition-all": true,
     "duration-200": true,
-    
   });
 
   return (
-    <Link
-      href={linkTo}
-      className={buttonClasses}
-    >
+    <Link href={linkTo} className={buttonClasses}>
       {text}
     </Link>
   );

@@ -3,7 +3,7 @@ import { domainFirstLine, domainSecondLine } from "../../../public/data/domain";
 import { events } from "../../../public/data/upcomingEvent";
 import photo from "@/../public/assets/domain/image.svg";
 import DomainCard from "@/components/DomainCard";
-import Button from "@/components/Button";
+import Button from "@/components/common/Button";
 import SectionDividerLine from "@/components/SectionDividerLine";
 import EventCard from "@/components/EventCard";
 import ProjectCarausal from "@/components/ProjectCarausal";
@@ -20,22 +20,22 @@ import DomainRow from "@/components/DomainRow";
 import domainsGradient from "@/../public/assets/ellipse/domainsEllipse.svg";
 
 export const turret = Turret_Road({
-  weight: '800',
-  subsets: ['latin'],
+  weight: "800",
+  subsets: ["latin"],
 });
 
-
 export default function Home() {
-  
   return (
-    <main className="bg-rich-blue-bg w-full  text-white">
-      <section id="hero" className=" w-11/12 mx-auto p-5 pt-11 ">
-        <div className="flex lg:flex-row flex-col gap-10 ">
-          <div className=" lg:w-[60%] flex flex-col gap-5">
-            <h1 className={` font-extrabold text-4xl ${turret.className} myShadow  text-primary-heading`}>
+    <main className="bg-rich-blue-bg w-full text-white">
+      <section id="hero" className=" w-11/12 mx-auto p-5 pt-11 max-w-[110rem]">
+        <div className="flex flex-col-reverse md:items-center md:flex-row gap-10 ">
+          <div className="md:w-3/5 flex flex-col gap-5">
+            <h1
+              className={`font-extrabold text-2xl sm:text-4xl ${turret.className} myShadow text-primary-heading`}
+            >
               Abhyudaya - Coding club
             </h1>
-            <p className=" text-3xl  leading-[45.8px]">
+            <p className="text-base sm:text-xl lg:text-2xl">
               The SVIIT Coding Club offers students a dynamic platform to learn,
               practice, and excel in coding. it welcomes individuals of all
               skill levels. Through engaging in coding competitions, hackathons,
@@ -46,13 +46,17 @@ export default function Home() {
               and technology.
             </p>
           </div>
-          <div>
-            <Image loading="lazy" src={photo} alt="abhyudaya" />
+          <div className="lg:w-2/5">
+            <Image
+              loading="lazy"
+              src={photo}
+              alt="abhyudaya"
+              className="h-auto w-full"
+            />
           </div>
         </div>
         <SectionDividerLine />
       </section>
-      
 
       <section
         id="domain"
@@ -60,20 +64,21 @@ export default function Home() {
       >
         <h1 className=" text-4xl font-bold">Our Domains</h1>
         <div className="flex z-10 flex-col mt-10 w-full  mx-auto  justify-items-center  items-center  p-5 gap-5">
-          <DomainRow domainArr={domainFirstLine}/>
-          <DomainRow domainArr={domainSecondLine}/>
+          <DomainRow domainArr={domainFirstLine} />
+          <DomainRow domainArr={domainSecondLine} />
         </div>
         <Button text="View More" rounded={true} linkTo="/" />
         <SectionDividerLine />
         <div className="shapeAtDomain"></div>
       </section>
 
-
       <section
         id="events"
         className="w-10/12 mx-auto p-5 flex flex-col items-center gap-9"
       >
-        <h1 className={`text-4xl font-extrabold ${turret.className}`}>Upcoming Events</h1>
+        <h1 className={`text-4xl font-extrabold ${turret.className}`}>
+          Upcoming Events
+        </h1>
         <div className="flex justify-center ">
           {events?.map((item) => {
             return (
@@ -89,16 +94,20 @@ export default function Home() {
         <SectionDividerLine />
       </section>
 
-      <section id="aboutCollege" className=" w-10/12 mx-auto flex flex-col items-center gap-8">
-        <h1 className={`${turret.className} font-extrabold text-4xl`}>About college</h1>
+      <section
+        id="aboutCollege"
+        className=" w-10/12 mx-auto flex flex-col items-center gap-8"
+      >
+        <h1 className={`${turret.className} font-extrabold text-4xl`}>
+          About college
+        </h1>
         <div className="flex gap-20 justify-center items-start flex-wrap">
-          
-         <div className="lg:w-[45%] h-[400px] border-8  rounded-3xl p-2 mt-2 " >
-         <Image src={photo} alt="" />
-         </div>
-          
+          <div className="lg:w-[45%] h-[400px] border-8  rounded-3xl p-2 mt-2 ">
+            <Image src={photo} alt="" />
+          </div>
+
           <div className="flex flex-col gap-10 lg:w-[45%] px-10">
-            <h2 className={`text-2xl font-semibold `} >
+            <h2 className={`text-2xl font-semibold `}>
               Shri Vaishnav Vidyapeeth Vishwavidyalaya
             </h2>
             <p>
@@ -117,21 +126,19 @@ export default function Home() {
         <SectionDividerLine />
       </section>
 
-
       <FacultySection faculties={collegeManagement} />
       <FacultySection faculties={coordinators} />
-  
 
-  
       <TeamSection team={boardMembers} />
-        <div className="flex justify-center">
+      <div className="flex justify-center">
         <Button linkTo="/team" text="View more" rounded={true} />
-        </div>
-        <SectionDividerLine/>
+      </div>
+      <SectionDividerLine />
 
-
-        <section id="faqs" className="flex flex-col items-center gap-4">
-        <h1 className={`mx-auto text-3xl font-bold ${turret.className}`}>FAQs</h1>
+      <section id="faqs" className="flex flex-col items-center gap-4">
+        <h1 className={`mx-auto text-3xl font-bold ${turret.className}`}>
+          FAQs
+        </h1>
         <Faqs />
       </section>
     </main>
