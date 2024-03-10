@@ -19,7 +19,7 @@ import { Turret_Road } from "next/font/google";
 import DomainRow from "@/components/DomainRow";
 import domainsGradient from "@/../public/assets/ellipse/domainsEllipse.svg";
 
-const turret = Turret_Road({
+export const turret = Turret_Road({
   weight: "800",
   subsets: ["latin"],
 });
@@ -57,6 +57,7 @@ export default function Home() {
         </div>
         <SectionDividerLine />
       </section>
+
       <section
         id="domain"
         className="relative  w-11/12 mx-auto p-5 pt-11 flex flex-col items-center"
@@ -70,12 +71,15 @@ export default function Home() {
         <SectionDividerLine />
         <div className="shapeAtDomain"></div>
       </section>
+
       <section
         id="events"
-        className="w-11/12 mx-auto p-5 flex flex-col items-center gap-9"
+        className="w-10/12 mx-auto p-5 flex flex-col items-center gap-9"
       >
-        <h1 className=" text-4xl font-bold">Upcoming Events</h1>
-        <div>
+        <h1 className={`text-4xl font-extrabold ${turret.className}`}>
+          Upcoming Events
+        </h1>
+        <div className="flex justify-center ">
           {events?.map((item) => {
             return (
               <EventCard
@@ -89,12 +93,21 @@ export default function Home() {
         </div>
         <SectionDividerLine />
       </section>
-      <section id="aboutCollege" className=" w-11/12 mx-auto ">
-        <h1 className=" font-bold text-4xl">About college</h1>
-        <div className="flex gap-10">
-          <Image src={photo} alt="" />
-          <div className="flex flex-col gap-10">
-            <h2 className=" text-3xl font-semibold">
+
+      <section
+        id="aboutCollege"
+        className=" w-10/12 mx-auto flex flex-col items-center gap-8"
+      >
+        <h1 className={`${turret.className} font-extrabold text-4xl`}>
+          About college
+        </h1>
+        <div className="flex gap-20 justify-center items-start flex-wrap">
+          <div className="lg:w-[45%] h-[400px] border-8  rounded-3xl p-2 mt-2 ">
+            <Image src={photo} alt="" />
+          </div>
+
+          <div className="flex flex-col gap-10 lg:w-[45%] px-10">
+            <h2 className={`text-2xl font-semibold `}>
               Shri Vaishnav Vidyapeeth Vishwavidyalaya
             </h2>
             <p>
@@ -112,15 +125,20 @@ export default function Home() {
         </div>
         <SectionDividerLine />
       </section>
+
       <FacultySection faculties={collegeManagement} />
       <FacultySection faculties={coordinators} />
 
       <TeamSection team={boardMembers} />
-      <Button linkTo="/team" text="View more" rounded={true} />
+      <div className="flex justify-center">
+        <Button linkTo="/team" text="View more" rounded={true} />
+      </div>
       <SectionDividerLine />
 
-      <section id="faqs" className="">
-        <h1 className="mx-auto text-3xl font-bold">FAQs</h1>
+      <section id="faqs" className="flex flex-col items-center gap-4">
+        <h1 className={`mx-auto text-3xl font-bold ${turret.className}`}>
+          FAQs
+        </h1>
         <Faqs />
       </section>
     </main>

@@ -8,14 +8,10 @@ interface TeamCardProp {
 const TeamCard = ({ person }: TeamCardProp) => {
   const { img, name, post } = person;
   return (
-    <div className="flex flex-col items-center gap-3">
-      <div className=" rounded-full bg-red-700 w-[134px] h-[134px] flex justify-center items-center">
-        <div className="w-[122px] rounded-full flex justify-center items-center bg-green-600 h-[122px]">
-          <Image className="w-[110px] h-[110px]" src={img} alt="" />
-        </div>
-      </div>
-      <h2 className="text-xl font-semibold">{name}</h2>
-      <p>{post}</p>
+    <div className="flex flex-col items-center gap-3 bg-rich-blue-bgDark border-dashed border-4 rounded-xl border-rich-blue-border py-5 px-6">
+      <Image src={img} alt="" />
+      <p className="text-xl text-center font-bold "> {post}</p>
+      <p>{name}</p>
     </div>
   );
 };
