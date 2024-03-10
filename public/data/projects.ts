@@ -32,10 +32,5 @@ export const projects: Array<{
     ],
     img: busTrackingSystem,
   },
-  {
-    id: 4,
-    heading: "Random",
-    features: ["for testing ui", "scroll effect"],
-    img: random,
-  },
+  
 ];

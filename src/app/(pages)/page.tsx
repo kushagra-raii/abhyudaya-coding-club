@@ -6,7 +6,6 @@ import DomainCard from "@/components/DomainCard";
 import Button from "@/components/common/Button";
 import SectionDividerLine from "@/components/SectionDividerLine";
 import EventCard from "@/components/EventCard";
-import ProjectCarausal from "@/components/ProjectCarausal";
 import FacultySection from "@/components/FacultySection";
 import {
   boardMembers,
@@ -18,7 +17,7 @@ import TeamSection from "@/components/TeamSection";
 import { Turret_Road } from "next/font/google";
 import DomainRow from "@/components/DomainRow";
 import domainsGradient from "@/../public/assets/ellipse/domainsEllipse.svg";
-
+import ProjectSection from "@/components/ProjectSection";
 export const turret = Turret_Road({
   weight: "800",
   subsets: ["latin"],
@@ -93,6 +92,10 @@ export default function Home() {
         </div>
         <SectionDividerLine />
       </section>
+
+
+          <ProjectSection />
+          <SectionDividerLine />
 
       <section
         id="aboutCollege"
