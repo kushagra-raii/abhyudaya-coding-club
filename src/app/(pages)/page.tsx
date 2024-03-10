@@ -26,7 +26,7 @@ export const turret = Turret_Road({
 export default function Home() {
   return (
     <main className="bg-rich-blue-bg w-full text-white">
-      <section id="hero" className=" w-11/12 mx-auto p-5 pt-11 max-w-[110rem]">
+      <section id="hero" className=" w-11/12 mx-auto p-5 sm:pt-11 max-w-[110rem] pt-36">
         <div className="flex flex-col-reverse md:items-center md:flex-row gap-10 ">
           <div className="md:w-3/5 flex flex-col gap-5">
             <h1
@@ -62,7 +62,7 @@ export default function Home() {
         className="relative  w-11/12 mx-auto p-5 pt-11 flex flex-col items-center"
       >
         <h1 className=" text-4xl font-bold">Our Domains</h1>
-        <div className="flex z-10 flex-col mt-10 w-full  mx-auto  justify-items-center  items-center  p-5 gap-5">
+        <div className="flex z-10 lg:flex-col mt-10 w-full   mx-auto  justify-items-center  items-center  p-5 gap-5">
           <DomainRow domainArr={domainFirstLine} />
           <DomainRow domainArr={domainSecondLine} />
         </div>

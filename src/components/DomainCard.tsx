@@ -15,7 +15,7 @@ const DomainCard = ({domain}:DomainCardProps) => {
   return (
 
   <div className='flex items-center  flex-col'>
-     <Image height={550} className=' w-fit  rounded-t-lg' src={domain.img} alt={domain.name}/>
+     <Image loading='lazy' className=' w-[337px] lg:w-fit   rounded-t-lg'  src={domain.img} alt={domain.name}/>
      <div className='bg-white text-black rounded-b-lg w-full p-5 opacity-40'>
 
       <p className='text-center' >{domain.name}</p>
