@@ -18,7 +18,8 @@ const config: Config = {
           bg: "#0F1437",
           bgDark: "#080D51",
           border: "#194EEF",
-          lightLine:"#7BE5E1"
+          lightLine:"#7BE5E1",
+          contactBg:"#0C0F23",
         },
         primary: {
           heading: "#EBFF00",

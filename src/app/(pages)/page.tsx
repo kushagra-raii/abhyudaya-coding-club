@@ -7,6 +7,9 @@ import Button from "@/components/common/Button";
 import SectionDividerLine from "@/components/SectionDividerLine";
 import EventCard from "@/components/EventCard";
 import FacultySection from "@/components/FacultySection";
+import contactMap from "@/../public/assets/contact/contactMap.svg";
+import contact from "@/../public/assets/contact/contact.svg";
+
 import {
   boardMembers,
   collegeManagement,
@@ -18,6 +21,7 @@ import { Turret_Road } from "next/font/google";
 import DomainRow from "@/components/DomainRow";
 import domainsGradient from "@/../public/assets/ellipse/domainsEllipse.svg";
 import ProjectSection from "@/components/ProjectSection";
+import ContactSection from "@/components/ContactSection";
 export const turret = Turret_Road({
   weight: "800",
   subsets: ["latin"],
@@ -26,7 +30,10 @@ export const turret = Turret_Road({
 export default function Home() {
   return (
     <main className="bg-rich-blue-bg w-full text-white">
-      <section id="hero" className=" w-11/12 mx-auto p-5 sm:pt-11 max-w-[110rem] pt-36">
+      <section
+        id="hero"
+        className=" w-11/12 mx-auto p-5 sm:pt-11 max-w-[110rem] pt-36"
+      >
         <div className="flex flex-col-reverse md:items-center md:flex-row gap-10 ">
           <div className="md:w-3/5 flex flex-col gap-5">
             <h1
@@ -93,9 +100,8 @@ export default function Home() {
         <SectionDividerLine />
       </section>
 
-
-          <ProjectSection />
-          <SectionDividerLine />
+      <ProjectSection />
+      <SectionDividerLine />
 
       <section
         id="aboutCollege"
@@ -143,7 +149,10 @@ export default function Home() {
           FAQs
         </h1>
         <Faqs />
+        <SectionDividerLine />
       </section>
+
+     <ContactSection/>
     </main>
   );
 }
