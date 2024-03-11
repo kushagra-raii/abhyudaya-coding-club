@@ -23,8 +23,9 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="flex mx-auto  w-10/12 justify-center py-16 "
+      className="flex mx-auto flex-col items-center  w-10/12 gap-10  pb-8 "
     >
+      <h2 className={`${turret.className} text-4xl font-extrabold `}>Contact Us</h2>
      <div className="flex justify-center">
      <div className="flex flex-col mr-[-1] py-5 items-center bg-rich-blue-contactBg px-24 rounded-l-[3rem] border-y-2 border-l-2 border-r-2 rounded-r-[3rem] lg:border-r-0 lg:rounded-r-[0rem] border-rich-blue-lightLine">
         <Image src={contact} height={200} alt="" />
@@ -33,11 +34,11 @@ const ContactSection = () => {
         </h3>
         <form
           onSubmit={onSubmit}
-          className="flex text-[#eeeeee] flex-col gap-2 items-start"
+          className="flex text-[#eeeeee] flex-col gap-1 items-start"
         >
           <label htmlFor="name">Name</label>
           <input
-            className="rounded-lg px-5 py-2 bg-[#343333]"
+            className="rounded-lg px-5 mb-2 py-2 bg-[#343333]"
             type="text"
             id="name"
             placeholder="Rachel Joe"
@@ -48,7 +49,7 @@ const ContactSection = () => {
           />
           <label htmlFor="email">Email</label>
           <input
-            className="rounded-lg px-5 py-2 bg-[#343333]"
+            className="rounded-lg px-5 mb-2 py-2 bg-[#343333]"
             type="email"
             id="email"
             placeholder="Rachel@domain.com"
@@ -59,7 +60,7 @@ const ContactSection = () => {
           />
           <label htmlFor="message">Message</label>
           <textarea
-            className="rounded-lg px-5 py-2 resize-none bg-[#343333]"
+            className="rounded-lg px-5 mb-2 py-2 resize-none bg-[#343333]"
             id="message"
             placeholder="Type your query here"
             rows={4}
@@ -69,28 +70,14 @@ const ContactSection = () => {
             }
             value={formData.message}
           />
-          <button type="submit" className="flex gap-2 ">
+          <button type="submit" className=" bg-[#6088EE] py-2 my-2 px-10  flex gap-2 ">
             Send Message
-            <svg
-              xmlns="XXXXXXXXXXXXXXXXXXXXXXXXXX"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
-              />
-            </svg>
           </button>
         </form>
       </div>
 
       <Image
-        height={620}
+        height={650}
         src={contactMap}
         className="rounded-r-[2rem] lg:block border-y-2 border-r-2 border-rich-blue-lightLine hidden"
         alt=""
