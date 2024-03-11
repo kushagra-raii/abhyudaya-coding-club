@@ -27,9 +27,9 @@ const ContactSection = () => {
     >
       <h2 className={`${turret.className} text-4xl font-extrabold `}>Contact Us</h2>
      <div className="flex justify-center">
-     <div className="flex flex-col mr-[-1] py-5 items-center bg-rich-blue-contactBg px-24 rounded-l-[3rem] border-y-2 border-l-2 border-r-2 rounded-r-[3rem] lg:border-r-0 lg:rounded-r-[0rem] border-rich-blue-lightLine">
-        <Image src={contact} height={200} alt="" />
-        <h3 className={`text-3xl font-bold ${turret.className}`}>
+     <div className="flex flex-col mr-[-1] py-5 items-center bg-rich-blue-contactBg md:px-24 px-14 rounded-l-[3rem] border-y-2 border-l-2 border-r-2 rounded-r-[3rem] lg:border-r-0 lg:rounded-r-[0rem] border-rich-blue-lightLine">
+        <Image src={contact} height={200} className="w-[200px]" alt="" />
+        <h3 className={`text-2xl md:text-3xl font-bold ${turret.className}`}>
           Get in touch with us
         </h3>
         <form
@@ -38,7 +38,7 @@ const ContactSection = () => {
         >
           <label htmlFor="name">Name</label>
           <input
-            className="rounded-lg px-5 mb-2 py-2 bg-[#343333]"
+            className="rounded-lg w-[233px] md:w-[288px] px-5 mb-2 py-2 bg-[#343333]"
             type="text"
             id="name"
             placeholder="Rachel Joe"
@@ -49,7 +49,7 @@ const ContactSection = () => {
           />
           <label htmlFor="email">Email</label>
           <input
-            className="rounded-lg px-5 mb-2 py-2 bg-[#343333]"
+            className="rounded-lg px-5 w-[233px] md:w-[288px] mb-2 py-2 bg-[#343333]"
             type="email"
             id="email"
             placeholder="Rachel@domain.com"
@@ -60,11 +60,11 @@ const ContactSection = () => {
           />
           <label htmlFor="message">Message</label>
           <textarea
-            className="rounded-lg px-5 mb-2 py-2 resize-none bg-[#343333]"
+            className="rounded-lg w-[233px] md:w-[288px] px-5 mb-2 py-2 resize-none bg-[#343333]"
             id="message"
             placeholder="Type your query here"
-            rows={4}
-            cols={23}
+            rows={3}
+            cols={18}
             onChange={(e) =>
               setFormData((prev) => ({ ...prev, message: e.target.value }))
             }
