@@ -22,7 +22,7 @@ const FaqCard = ({ question, currentQuestion, setCurrentQuestion }: Props) => {
 
   const descriptionClass = cx({
     hidden: question.id !== currentQuestion,
-    "p-2": true,
+    "md:p-2": true,
     "leading-7": true,
     "mt-2": true,
   });
@@ -30,10 +30,10 @@ const FaqCard = ({ question, currentQuestion, setCurrentQuestion }: Props) => {
   return (
     <div
       onClick={onClickHandler}
-      className="border-2 border-rich-blue-lightLine rounded-[55px]  md:w-[500px] lg:w-[860px] p-8 m-2 md:p-12"
+      className="border-2 border-rich-blue-lightLine rounded-3xl md:w-4/5 px-4 py-4 m-2 md:px-12 md:py-4"
     >
-      <div className=" text-lg font-bold">{question.ques}</div>
-      <div className={descriptionClass}>{question.desc}</div>
+      <div className="text-md font-bold">{question.ques}</div>
+      <p className={descriptionClass}>{question.desc}</p>
     </div>
   );
 };

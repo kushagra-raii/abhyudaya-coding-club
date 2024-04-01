@@ -32,9 +32,9 @@ export default function Home() {
     <main className="bg-rich-blue-bg w-full text-white">
       <section
         id="hero"
-        className=" w-11/12 mx-auto p-5 sm:pt-11 max-w-[110rem] pt-36"
+        className="w-11/12 mx-auto p-5 sm:pt-11 max-w-[110rem] pt-36"
       >
-        <div className="flex flex-col-reverse md:items-center md:flex-row gap-10 ">
+        <div className="flex flex-col-reverse md:items-center md:flex-row gap-10">
           <div className="md:w-3/5 flex flex-col gap-5">
             <h1
               className={`font-extrabold text-2xl sm:text-4xl ${turret.className} myShadow text-primary-heading`}
@@ -42,7 +42,7 @@ export default function Home() {
               Abhyudaya - Coding club
             </h1>
             <p className="text-base sm:text-xl lg:text-2xl">
-              The SVIIT Coding Club offers students a dynamic platform to learn,
+              The SVITS Coding Club offers students a dynamic platform to learn,
               practice, and excel in coding. it welcomes individuals of all
               skill levels. Through engaging in coding competitions, hackathons,
               and a shared passion for technology, the club transforms ideas
@@ -61,15 +61,15 @@ export default function Home() {
             />
           </div>
         </div>
-        <SectionDividerLine />
+        <SectionDividerLine className="" />
       </section>
 
       <section
         id="domain"
-        className="relative  w-11/12 mx-auto p-5 pt-11 flex flex-col items-center"
+        className="relative w-11/12 mx-auto p-5 pt-11 flex flex-col items-center "
       >
-        <h1 className=" text-4xl font-bold">Our Domains</h1>
-        <div className="flex z-10 lg:flex-col mt-10 w-full   mx-auto  justify-items-center  items-center  p-5 gap-5">
+        <h1 className="text-2xl sm:text-4xl font-bold">Our Domains</h1>
+        <div className="flex lg:flex-col z-10 mt-10 w-full mx-auto justify-center items-center gap-5 mb-2">
           <DomainRow domainArr={domainFirstLine} />
           <DomainRow domainArr={domainSecondLine} />
         </div>
@@ -77,10 +77,9 @@ export default function Home() {
         <SectionDividerLine />
         <div className="shapeAtDomain"></div>
       </section>
-
       <section
         id="events"
-        className="w-10/12 mx-auto p-5 flex flex-col items-center gap-9"
+        className="w-10/12 mx-auto px-3 flex flex-col items-center gap-9"
       >
         <h1 className={`text-4xl font-extrabold ${turret.className}`}>
           Upcoming Events
@@ -110,12 +109,12 @@ export default function Home() {
         <h1 className={`${turret.className} font-extrabold text-4xl`}>
           About college
         </h1>
-        <div className="flex gap-20 justify-center items-start flex-wrap">
-          <div className="lg:w-[45%] h-[400px] border-8  rounded-3xl p-2 mt-2 ">
-            <Image src={photo} alt="" />
+        <div className="flex gap-x-20 justify-center items-start flex-wrap">
+          <div className="w-full sm:w-[45%] md:h-[400px] border-8  rounded-3xl mt-2 ">
+            <Image src={photo} alt=""  className="rounded-3xl"/>
           </div>
 
-          <div className="flex flex-col gap-10 lg:w-[45%] px-10">
+          <div className="flex flex-col gap-10 lg:w-[45%] px-4 mt-4 md:mt-0 md:px-10">
             <h2 className={`text-2xl font-semibold `}>
               Shri Vaishnav Vidyapeeth Vishwavidyalaya
             </h2>
@@ -152,7 +151,7 @@ export default function Home() {
         <SectionDividerLine />
       </section>
 
-     <ContactSection/>
+      <ContactSection />
     </main>
   );
 }

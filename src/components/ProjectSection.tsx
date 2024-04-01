@@ -8,7 +8,7 @@ import { turret } from '@/app/(pages)/page';
 const ProjectSection = () => {
   return (
     <div className='flex flex-col items-center gap-5 my-5'>
-        <h1 className={`${turret.className} text-4xl font-extrabold `}>
+        <h1 className={`${turret.className} text-3xl md:text-4xl font-extrabold `}>
             Projects
         </h1>
         <Carousel >

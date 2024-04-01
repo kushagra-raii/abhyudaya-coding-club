@@ -14,10 +14,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   const { heading, img, desc, features } = project;
   return (
     <div className="flex flex-col ">
-      <div className="xl:h-[350px] h-[409px] lg:h-[284px] lg:w-[282px] xl:w-[350px] border-8 rounded-3xl p-8">
-        <Image src={img} alt="" loading="lazy" />
+      <div className="xl:h-[350px] h-auto w-full lg:h-[284px] lg:w-[282px] xl:w-[350px] border-8 rounded-3xl">
+        <Image src={img} alt="" loading="lazy" className="rounded-3xl" />
       </div>
-      <h1 className="w-full text-center font-bold text-2xl my-2">{heading}</h1>
+      <h1 className="w-full text-center font-semibold text-xl my-2">{heading}</h1>
       <div className="flex flex-col items-center    ">
         
         <div className="max-w-[70%] flex flex-col gap-2">

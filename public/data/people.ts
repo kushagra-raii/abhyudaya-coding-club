@@ -19,13 +19,13 @@ interface Person {
 export const collegeManagement: Array<Person> = [
   {
     id: 1,
-    img: vcImage,
+    img: secretaryImg,
     name: "Upendra Dhar",
     post: "Vice Chancellor",
   },
   {
     id: 2,
-    img: hodImage,
+    img: secretaryImg,
     name: "Anand Rajawat",
     post: "Head of Department",
   },
@@ -33,28 +33,28 @@ export const collegeManagement: Array<Person> = [
 export const coordinators: Array<Person> = [
   {
     id: 1,
-    img: coordinator1,
+    img: secretaryImg,
     name: "Prof. Gangeshwari Sharma",
     post: "Coordinator",
   },
   {
     id: 2,
-    img: coordinator2,
+    img: secretaryImg,
     name: "Prof. Avdhesh Kumar Sharma",
     post: "Coordinator",
   },
   {
     id: 3,
-    img: coordinator3,
+    img: secretaryImg,
     name: "Prof. Kamal Borana",
     post: "Coordinator",
   },
-  {
-    id: 4,
-    img: mentorImg,
-    name: "Naman Sisodiya",
-    post: "mentor",
-  },
+  // {
+  //   id: 4,
+  //   img: mentorImg,
+  //   name: "Naman Sisodiya",
+  //   post: "mentor",
+  // },
 ];
 
 export const boardMembers: Array<Person> = [
