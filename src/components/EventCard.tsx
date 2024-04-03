@@ -17,8 +17,8 @@ const EventCard = ({ heading, desc, img }: EventCardProps) => {
         {heading}
       </h1>
 
-      <div className="lg:w-[45%] w-full md:min-h-[400px] border-8  rounded-3xl p-2 mt-2 ">
-        <Image src={img} alt="" />
+      <div className="lg:w-[45%] md:min-h-[350px] sm:border-8 sm:rounded-3xl overflow-hidden mt-2">
+        <Image src={img} alt="" className="w-full h-full" />
       </div>
 
       <div className="flex flex-col gap-10 md:w-1/2 lg:justify-evenly items-start h-full lg:w-[45%] md:px-10">

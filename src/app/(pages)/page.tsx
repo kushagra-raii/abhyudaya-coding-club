@@ -109,9 +109,9 @@ export default function Home() {
         <h1 className={`${turret.className} font-extrabold text-4xl`}>
           About college
         </h1>
-        <div className="flex gap-x-20 justify-center items-start flex-wrap">
-          <div className="w-full sm:w-[45%] md:h-[400px] border-8  rounded-3xl mt-2 ">
-            <Image src={photo} alt=""  className="rounded-3xl"/>
+        <div className="flex gap-x-20 justify-center items-center flex-wrap">
+          <div className="w-full sm:w-[45%] mb-4 border-8  rounded-3xl mt-2 ">
+            <Image src={photo} alt="" className="rounded-3xl w-full" />
           </div>
 
           <div className="flex flex-col gap-10 lg:w-[45%] px-4 mt-4 md:mt-0 md:px-10">

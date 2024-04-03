@@ -23,13 +23,13 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="flex mx-auto flex-col items-center w-auto gap-10 pb-8 "
+      className="flex flex-col items-center w-5/6 mx-auto gap-10 pb-8 "
     >
       <h2 className={`${turret.className} text-4xl font-extrabold `}>
         Contact Us
       </h2>
-      <div className="flex justify-center">
-        <div className="flex flex-col py-5 items-center bg-rich-blue-contactBg md:px-24 px-6 rounded-l-[3rem] border-y-2 border-l-2 border-r-2 rounded-r-[3rem] lg:border-r-0 lg:rounded-r-[0rem] border-rich-blue-lightLine">
+      <div className="flex justify-center w-full border-2 rounded-[16px] overflow-hidden">
+        <div className="flex flex-col py-5 w-full items-center bg-rich-blue-contactBg md:px-24 px-6 ">
           <Image src={contact} height={200} className="" alt="" />
           <h3 className={`text-2xl md:text-3xl font-bold ${turret.className}`}>
             Get in touch with us
@@ -62,7 +62,7 @@ const ContactSection = () => {
             />
             <label htmlFor="message">Message</label>
             <textarea
-              className="rounded-lg  md:w-[288px] px-5 mb-2 py-2 resize-none bg-[#343333]"
+              className="rounded-lg w-full px-5 mb-2 py-2 resize-none bg-[#343333]"
               id="message"
               placeholder="Type your query here"
               rows={3}
@@ -80,11 +80,10 @@ const ContactSection = () => {
             </button>
           </form>
         </div>
-
         <Image
           height={650}
           src={contactMap}
-          className="rounded-r-[2rem] lg:block border-y-2 border-r-2 border-rich-blue-lightLine hidden"
+          className="lg:block hidden"
           alt=""
         />
       </div>

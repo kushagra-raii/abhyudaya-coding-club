@@ -1,23 +1,25 @@
-import React from 'react'
-import Carousel from './Carousal'
+import React from "react";
+import Carousel from "./Carousal";
 
 import { projects } from "../../public/data/projects";
 import ProjectCard from "./ProjectCard";
-import { turret } from '@/app/(pages)/page';
+import { turret } from "@/app/(pages)/page";
 
 const ProjectSection = () => {
   return (
-    <div className='flex flex-col items-center gap-5 my-5'>
-        <h1 className={`${turret.className} text-3xl md:text-4xl font-extrabold `}>
-            Projects
-        </h1>
-        <Carousel >
+    <div className="flex flex-col items-center gap-5 my-5">
+      <h1
+        className={`${turret.className} text-3xl md:text-4xl font-extrabold `}
+      >
+        Projects
+      </h1>
+      <Carousel>
         {projects?.map((project) => {
-        return <ProjectCard key={project.id} project={project} />;
-      })}
-        </Carousel>
+          return <ProjectCard key={project.id} project={project} />;
+        })}
+      </Carousel>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectSection
+export default ProjectSection;

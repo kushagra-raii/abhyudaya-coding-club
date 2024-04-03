@@ -30,7 +30,7 @@ const FaqCard = ({ question, currentQuestion, setCurrentQuestion }: Props) => {
   return (
     <div
       onClick={onClickHandler}
-      className="border-2 border-rich-blue-lightLine rounded-3xl md:w-4/5 px-4 py-4 m-2 md:px-12 md:py-4"
+      className="border-2 border-rich-blue-lightLine rounded-3xl w-4/5 px-4 py-2 m-2 md:px-12 md:py-4"
     >
       <div className="text-md font-bold">{question.ques}</div>
       <p className={descriptionClass}>{question.desc}</p>

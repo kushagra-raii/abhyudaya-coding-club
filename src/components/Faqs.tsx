@@ -7,7 +7,7 @@ import FaqCard from "./FaqCard";
 const Faqs = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   return (
-    <div className="flex flex-col gap-y-2 md:gap-4 px-4">
+    <div className="flex w-full items-center flex-col gap-y-2 md:gap-4 px-4">
       {faqs?.map((item) => (
         <FaqCard
           currentQuestion={currentQuestion}
