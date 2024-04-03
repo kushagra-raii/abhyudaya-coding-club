@@ -10,7 +10,7 @@ type Props = {
   currentQuestion: number;
   setCurrentQuestion: Dispatch<SetStateAction<number>>;
 };
-
+console.log("changes");
 const FaqCard = ({ question, currentQuestion, setCurrentQuestion }: Props) => {
   const onClickHandler = () => {
     if (question.id === currentQuestion) {
