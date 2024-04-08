@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 type ProjectCardProps = {
@@ -14,8 +13,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   const { heading, img, desc, features } = project;
   return (
     <div className="flex flex-col ">
-      <div className=" lg:w-[282px] xl:w-[350px] border-8 rounded-3xl">
-        <Image src={img} alt="" loading="lazy" className="rounded-3xl w-full" />
+      <div className=" lg:w-[282px] xl:w-[350px] border-8 rounded-3xl overflow-hidden">
+        <Image src={img} alt="" loading="lazy" className="w-full" />
       </div>
       <h1 className="w-full text-center font-semibold text-xl my-2">
         {heading}

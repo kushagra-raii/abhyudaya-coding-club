@@ -1,9 +1,9 @@
 "use client";
-import React, { FormEvent } from "react";
-import Image from "next/image";
 import contact from "@/../public/assets/contact/contact.svg";
 import contactMap from "@/../public/assets/contact/contactMap.svg";
 import { turret } from "@/app/(pages)/page";
+import Image from "next/image";
+import React, { FormEvent } from "react";
 const ContactSection = () => {
   const [formData, setFormData] = React.useState({
     name: "",

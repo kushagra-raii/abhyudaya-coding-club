@@ -1,6 +1,5 @@
-import React from "react";
-import Button from "./common/Button";
 import Image from "next/image";
+import Button from "./common/Button";
 
 type EventCardProps = {
   heading: string;

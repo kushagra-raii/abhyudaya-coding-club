@@ -1,13 +1,13 @@
-import vcImage from "./../assets/faculty/Naman.svg";
-import hodImage from "./../assets/faculty/Naman.svg";
-import coordinator1 from "./../assets/faculty/Naman.svg";
-import coordinator2 from "./../assets/faculty/Naman.svg";
-import coordinator3 from "./../assets/faculty/Naman.svg";
-import mentorImg from "./../assets/faculty/Naman.svg";
-import presidentImg from "./../assets/domain/image.svg";
-import vicePresidentImg from "./../assets/domain/image.svg";
+import adityaTiwari from "./../assets/faculty/aditya-tiwari.svg";
+import anandRajavatHodSir from "./../assets/faculty/anand-rajavat-hod.svg";
+import avdheshKumar from "./../assets/faculty/avdhesh-kumar.svg";
+import gangeshwarisSharma from "./../assets/faculty/gangeshwari-sharma.svg";
+import kamalBorana from "./../assets/faculty/kamal-borana.svg";
+import sanskarChaubey from "./../assets/faculty/sanskar-choubey.svg";
+import shivamSharma from "./../assets/faculty/shivam-sharma.svg";
+import tanayNagde from "./../assets/faculty/tanay-nagde.svg";
+import viceChancellor from "./../assets/faculty/vice-chancellor.svg";
 import secretaryImg from "./../assets/technical/Yashraj.svg";
-import tresurerImg from "./../assets/domain/image.svg";
 
 interface Person {
   id: number;
@@ -19,13 +19,13 @@ interface Person {
 export const collegeManagement: Array<Person> = [
   {
     id: 1,
-    img: secretaryImg,
+    img: viceChancellor,
     name: "Upendra Dhar",
     post: "Vice Chancellor",
   },
   {
     id: 2,
-    img: secretaryImg,
+    img: anandRajavatHodSir,
     name: "Anand Rajawat",
     post: "Head of Department",
   },
@@ -33,19 +33,19 @@ export const collegeManagement: Array<Person> = [
 export const coordinators: Array<Person> = [
   {
     id: 1,
-    img: secretaryImg,
+    img: gangeshwarisSharma,
     name: "Prof. Gangeshwari Sharma",
     post: "Coordinator",
   },
   {
     id: 2,
-    img: secretaryImg,
+    img: avdheshKumar,
     name: "Prof. Avdhesh Kumar Sharma",
     post: "Coordinator",
   },
   {
     id: 3,
-    img: secretaryImg,
+    img: kamalBorana,
     name: "Prof. Kamal Borana",
     post: "Coordinator",
   },
@@ -60,25 +60,25 @@ export const coordinators: Array<Person> = [
 export const boardMembers: Array<Person> = [
   {
     id: 1,
-    img: secretaryImg,
+    img: shivamSharma,
     name: "Shivam Sharma",
     post: "President",
   },
   {
     id: 2,
-    img: secretaryImg,
+    img: tanayNagde,
     name: "Tanay Nagde",
     post: "Vice President",
   },
   {
     id: 3,
-    img: secretaryImg,
+    img: sanskarChaubey,
     name: "Sanskar Choubey",
     post: "Secretary",
   },
   {
     id: 4,
-    img: secretaryImg,
+    img: adityaTiwari,
     name: "Aditya Tiwari",
     post: "Tresurer",
   },

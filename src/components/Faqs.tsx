@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { faqs } from "../../public/data/faqs";
 import FaqCard from "./FaqCard";
 

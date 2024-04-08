@@ -1,7 +1,6 @@
-import collegeJagat from "./../assets/domain/image.svg";
-import bhojanalya from "./../assets/domain/image.svg";
-import busTrackingSystem from "./../assets/domain/image.svg";
-import random from "./../assets/domain/image.svg";
+import busTrackingSystem from "./../assets/faculty/bus-tracking.svg";
+import clubManagement from "./../assets/faculty/club-management.svg";
+import collegeJagat from "./../assets/faculty/college-jagat.svg";
 
 export const projects: Array<{
   id: number;
@@ -19,9 +18,9 @@ export const projects: Array<{
   },
   {
     id: 2,
-    heading: "BHOJANALAY",
-    features: ["Make Cashless payment using tokens.", "Rewards/ offers."],
-    img: bhojanalya,
+    heading: "Club Management",
+    features: ["One stop solution for all club team management "],
+    img: clubManagement,
   },
   {
     id: 3,
@@ -32,5 +31,4 @@ export const projects: Array<{
     ],
     img: busTrackingSystem,
   },
-  
 ];

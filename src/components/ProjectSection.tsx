@@ -1,9 +1,8 @@
-import React from "react";
 import Carousel from "./Carousal";
 
+import { turret } from "@/app/(pages)/page";
 import { projects } from "../../public/data/projects";
 import ProjectCard from "./ProjectCard";
-import { turret } from "@/app/(pages)/page";
 
 const ProjectSection = () => {
   return (

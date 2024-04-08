@@ -1,27 +1,24 @@
+import photo from "@/../public/assets/domain/image.svg";
+import collegeImg from "@/../public/assets/faculty/college-image.svg";
+import EventCard from "@/components/EventCard";
+import FacultySection from "@/components/FacultySection";
+import SectionDividerLine from "@/components/SectionDividerLine";
+import Button from "@/components/common/Button";
 import Image from "next/image";
 import { domainFirstLine, domainSecondLine } from "../../../public/data/domain";
 import { events } from "../../../public/data/upcomingEvent";
-import photo from "@/../public/assets/domain/image.svg";
-import DomainCard from "@/components/DomainCard";
-import Button from "@/components/common/Button";
-import SectionDividerLine from "@/components/SectionDividerLine";
-import EventCard from "@/components/EventCard";
-import FacultySection from "@/components/FacultySection";
-import contactMap from "@/../public/assets/contact/contactMap.svg";
-import contact from "@/../public/assets/contact/contact.svg";
 
 import {
   boardMembers,
   collegeManagement,
   coordinators,
 } from "@/../public/data/people";
+import ContactSection from "@/components/ContactSection";
+import DomainRow from "@/components/DomainRow";
 import Faqs from "@/components/Faqs";
+import ProjectSection from "@/components/ProjectSection";
 import TeamSection from "@/components/TeamSection";
 import { Turret_Road } from "next/font/google";
-import DomainRow from "@/components/DomainRow";
-import domainsGradient from "@/../public/assets/ellipse/domainsEllipse.svg";
-import ProjectSection from "@/components/ProjectSection";
-import ContactSection from "@/components/ContactSection";
 export const turret = Turret_Road({
   weight: "800",
   subsets: ["latin"],
@@ -98,7 +95,6 @@ export default function Home() {
         </div>
         <SectionDividerLine />
       </section>
-
       <ProjectSection />
       <SectionDividerLine />
 
@@ -106,12 +102,12 @@ export default function Home() {
         id="aboutCollege"
         className=" w-10/12 mx-auto flex flex-col items-center gap-8"
       >
-        <h1 className={`${turret.className} font-extrabold text-4xl`}>
+        <h1 className={`${turret?.className} font-extrabold text-4xl`}>
           About college
         </h1>
         <div className="flex gap-x-20 justify-center items-center flex-wrap">
-          <div className="w-full sm:w-[45%] mb-4 border-8  rounded-3xl mt-2 ">
-            <Image src={photo} alt="" className="rounded-3xl w-full" />
+          <div className="w-full sm:w-[45%] mb-4 border-8 overflow-hidden  rounded-3xl mt-2 ">
+            <Image src={collegeImg} alt="" className="w-full" />
           </div>
 
           <div className="flex flex-col gap-10 lg:w-[45%] px-4 mt-4 md:mt-0 md:px-10">
@@ -142,7 +138,6 @@ export default function Home() {
         <Button linkTo="/team" text="View more" rounded={true} />
       </div>
       <SectionDividerLine />
-
       <section id="faqs" className="flex flex-col items-center gap-4">
         <h1 className={`mx-auto text-3xl font-bold ${turret.className}`}>
           FAQs
@@ -150,8 +145,8 @@ export default function Home() {
         <Faqs />
         <SectionDividerLine />
       </section>
-
-      <ContactSection />
+      {/* 
+      <ContactSection /> */}
     </main>
   );
 }
