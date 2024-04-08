@@ -1,13 +1,13 @@
-import vcImage from "./../assets/domain/image.svg";
-import hodImage from "./../assets/domain/image.svg";
-import coordinator1 from "./../assets/domain/image.svg";
-import coordinator2 from "./../assets/domain/image.svg";
-import coordinator3 from "./../assets/domain/image.svg";
-import mentorImg from "./../assets/domain/image.svg";
-import presidentImg from "./../assets/domain/image.svg";
-import vicePresidentImg from "./../assets/domain/image.svg";
-import secretaryImg from "./../assets/domain/image.svg";
-import tresurerImg from "./../assets/domain/image.svg";
+import adityaTiwari from "./../assets/faculty/aditya-tiwari.svg";
+import anandRajavatHodSir from "./../assets/faculty/anand-rajavat-hod.svg";
+import avdheshKumar from "./../assets/faculty/avdhesh-kumar.svg";
+import gangeshwarisSharma from "./../assets/faculty/gangeshwari-sharma.svg";
+import kamalBorana from "./../assets/faculty/kamal-borana.svg";
+import sanskarChaubey from "./../assets/faculty/sanskar-choubey.svg";
+import shivamSharma from "./../assets/faculty/shivam-sharma.svg";
+import tanayNagde from "./../assets/faculty/tanay-nagde.svg";
+import viceChancellor from "./../assets/faculty/vice-chancellor.svg";
+import secretaryImg from "./../assets/technical/Yashraj.svg";
 
 interface Person {
   id: number;
@@ -19,13 +19,13 @@ interface Person {
 export const collegeManagement: Array<Person> = [
   {
     id: 1,
-    img: vcImage,
+    img: viceChancellor,
     name: "Upendra Dhar",
     post: "Vice Chancellor",
   },
   {
     id: 2,
-    img: hodImage,
+    img: anandRajavatHodSir,
     name: "Anand Rajawat",
     post: "Head of Department",
   },
@@ -33,52 +33,52 @@ export const collegeManagement: Array<Person> = [
 export const coordinators: Array<Person> = [
   {
     id: 1,
-    img: coordinator1,
+    img: gangeshwarisSharma,
     name: "Prof. Gangeshwari Sharma",
     post: "Coordinator",
   },
   {
     id: 2,
-    img: coordinator2,
+    img: avdheshKumar,
     name: "Prof. Avdhesh Kumar Sharma",
     post: "Coordinator",
   },
   {
     id: 3,
-    img: coordinator3,
+    img: kamalBorana,
     name: "Prof. Kamal Borana",
     post: "Coordinator",
   },
-  {
-    id: 4,
-    img: mentorImg,
-    name: "Naman Sisodiya",
-    post: "mentor",
-  },
+  // {
+  //   id: 4,
+  //   img: mentorImg,
+  //   name: "Naman Sisodiya",
+  //   post: "mentor",
+  // },
 ];
 
 export const boardMembers: Array<Person> = [
   {
     id: 1,
-    img: presidentImg,
+    img: shivamSharma,
     name: "Shivam Sharma",
     post: "President",
   },
   {
     id: 2,
-    img: vicePresidentImg,
+    img: tanayNagde,
     name: "Tanay Nagde",
     post: "Vice President",
   },
   {
     id: 3,
-    img: secretaryImg,
+    img: sanskarChaubey,
     name: "Sanskar Choubey",
     post: "Secretary",
   },
   {
     id: 4,
-    img: tresurerImg,
+    img: adityaTiwari,
     name: "Aditya Tiwari",
     post: "Tresurer",
   },
