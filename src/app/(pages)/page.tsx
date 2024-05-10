@@ -65,21 +65,21 @@ export default function Home() {
         id="domain"
         className="relative w-11/12 mx-auto p-5 pt-11 flex flex-col items-center "
       >
-        <h1 className="text-2xl sm:text-4xl font-bold">Our Domains</h1>
+        <h1 className={`text-2xl sm:text-4xl font-bold ${turret.className}`}>Our Domains</h1>
         <div className="flex lg:flex-col z-10 mt-10 w-full mx-auto justify-center items-center gap-5 mb-2">
           <DomainRow domainArr={domainFirstLine} />
           <DomainRow domainArr={domainSecondLine} />
         </div>
-        <Button text="View More" rounded={true} linkTo="/" />
+        {/* <Button text="View More" rounded={true} linkTo="/" /> */}
         <SectionDividerLine />
         <div className="shapeAtDomain"></div>
       </section>
       <section
         id="events"
-        className="w-10/12 mx-auto px-3 flex flex-col items-center gap-9"
+        className="w-10/12 mx-auto px-2 flex flex-col items-center gap-9"
       >
         <h1 className={`text-4xl font-extrabold ${turret.className}`}>
-          Upcoming Events
+          Upcoming Event
         </h1>
         <div className="flex justify-center ">
           {events?.map((item) => {

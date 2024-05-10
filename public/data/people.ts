@@ -3,11 +3,20 @@ import anandRajavatHodSir from "./../assets/faculty/anand-rajavat-hod.svg";
 import avdheshKumar from "./../assets/faculty/avdhesh-kumar.svg";
 import gangeshwarisSharma from "./../assets/faculty/gangeshwari-sharma.svg";
 import kamalBorana from "./../assets/faculty/kamal-borana.svg";
-import sanskarChaubey from "./../assets/faculty/sanskar-choubey.svg";
+import tanayNagde from "./../assets/faculty/sanskar-choubey.svg";
 import shivamSharma from "./../assets/faculty/shivam-sharma.svg";
-import tanayNagde from "./../assets/faculty/tanay-nagde.svg";
+import sanskarChaubey from "./../assets/faculty/tanay-nagde.svg";
 import viceChancellor from "./../assets/faculty/vice-chancellor.svg";
 import secretaryImg from "./../assets/technical/Yashraj.svg";
+import mayank from "./../assets/technical/Mayank.svg";
+import nirvighna from "./../assets/technical/Nirvighna.svg";
+import diya from "./../assets/technical/diya.svg";
+import kanishka from "./../assets/technical/kanishka.svg";
+import himanshu from "./../assets/technical/Himanshu.svg";
+import khushboo from "./../assets/technical/Khushboo.svg";
+import kripansh from "./../assets/technical/kripansh.svg";
+import naman from "./../assets/faculty/Naman.svg";
+
 
 interface Person {
   id: number;
@@ -57,6 +66,21 @@ export const coordinators: Array<Person> = [
   // },
 ];
 
+export const mentors: Array<Person> = [
+  {
+    id: 1,
+    img: naman,
+    name: "Sanskar Choubey",
+    post: "mentor",
+  },
+  {
+    id: 2,
+    img: naman,
+    name: "Naman Sisodiya",
+    post: "mentor",
+  },
+
+]
 export const boardMembers: Array<Person> = [
   {
     id: 1,
@@ -72,8 +96,8 @@ export const boardMembers: Array<Person> = [
   },
   {
     id: 3,
-    img: sanskarChaubey,
-    name: "Sanskar Choubey",
+    img: secretaryImg,
+    name: "Yashraj Sisodiya",
     post: "Secretary",
   },
   {
@@ -87,49 +111,49 @@ export const boardMembers: Array<Person> = [
 export const team: Array<Person> = [
   {
     id: 1,
-    img: secretaryImg,
+    img: mayank,
     name: "Mayank Matkar",
     post: "Development Joint Head",
   },
   {
     id: 2,
     img: secretaryImg,
-    name: "Yashraj Sisodiya",
+    name: "Varun Agrawal",
     post: "Technical Head",
   },
   {
     id: 3,
-    img: secretaryImg,
+    img: khushboo,
     name: "Khushbu Gehlot",
     post: "P.R. Head",
   },
   {
     id: 4,
-    img: secretaryImg,
+    img: himanshu,
     name: "Himanshu Agnihotri",
     post: "Marketing Head",
   },
   {
     id: 5,
-    img: secretaryImg,
+    img: kripansh,
     name: "Kripansh Kumravat",
     post: "Development Joint Head",
   },
   {
     id: 6,
-    img: secretaryImg,
-    name: "Nirvighna",
-    post: "Grapjic Lead",
+    img: nirvighna,
+    name: "Nirvighna Chavan",
+    post: "Graphic Lead",
   },
   {
     id: 7,
-    img: secretaryImg,
+    img: diya,
     name: "Diya Verma",
     post: "Design Lead",
   },
   {
     id: 8,
-    img: secretaryImg,
+    img: kanishka,
     name: "Kanishka Bhadavya",
     post: "Community Lead",
   },

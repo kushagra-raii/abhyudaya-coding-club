@@ -5,18 +5,18 @@ export const navData = [
   },
   {
     title: "Our-Domains",
-    path: "/our-domains",
+    path: "/#domain",
   },
   {
     title: "Upcoming event",
-    path: "/upcoming-event",
+    path: "/#events",
   },
   {
     title: "Projects",
-    path: "#projects",
+    path: "/#projects",
   },
   {
     title: "FAQs",
-    path: "/faqs",
+    path: "/#faqs",
   },
 ];

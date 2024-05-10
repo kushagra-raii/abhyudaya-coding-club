@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 
 const ProjectSection = () => {
   return (
-    <div className="flex flex-col items-center gap-5 my-5">
+    <section id="projects" className="flex flex-col items-center gap-5 my-5">
       <h1
         className={`${turret.className} text-3xl md:text-4xl font-extrabold `}
       >
@@ -17,7 +17,7 @@ const ProjectSection = () => {
           return <ProjectCard key={project.id} project={project} />;
         })}
       </Carousel>
-    </div>
+    </section>
   );
 };
 
