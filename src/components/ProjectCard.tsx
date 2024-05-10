@@ -14,7 +14,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="flex flex-col ">
       <div className=" lg:w-[282px] xl:w-[350px] border-8 rounded-3xl overflow-hidden">
-        <Image src={img} alt="" loading="lazy" className="w-full" />
+        <Image src={img} alt={heading} loading="lazy" className="w-full" />
       </div>
       <h1 className="w-full text-center font-semibold text-xl my-2">
         {heading}

@@ -3,8 +3,11 @@
 import React, { useState } from "react";
 import {
   FaArrowAltCircleRight,
-  FaArrowCircleLeft
+  FaArrowCircleLeft,
+  FaChevronCircleRight,
+  FaChevronCircleLeft,
 } from "react-icons/fa";
+
 
 interface CarouselProps {
   children: JSX.Element[];
@@ -27,10 +30,9 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
 
   return (
     <div className="w-10/12 mx-auto flex justify-center ">
-      {/* Large screens */}
       <div className="lg:flex gap-4 item hidden">
         <button onClick={prevSlide} className="mb-40 ">
-          <FaArrowCircleLeft />
+          <FaChevronCircleLeft className="text-3xl" />
         </button>
         <div className="flex gap-8">
           {[
@@ -39,12 +41,12 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
           ].slice(0, 3)}
         </div>
         <button onClick={nextSlide} className="mb-40">
-          <FaArrowAltCircleRight />
+          <FaChevronCircleRight className="text-3xl"/>
+          
         </button>
       </div>
       <div className="lg:hidden flex flex-col gap-10">{...children}</div>
 
-      {/* Medium screens */}
     </div>
   );
 };

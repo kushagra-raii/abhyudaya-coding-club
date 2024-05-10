@@ -11,7 +11,7 @@ const EventCard = ({ heading, desc, img }: EventCardProps) => {
   return (
     <div className="flex gap-8 lg:gap-20 justify-center items-center lg:items-start flex-col lg:flex-row">
       <h1
-        className={`block lg:hidden font-extrabold border-4 text-xl md:text-3xl border-rich-blue-border border-opacity-70 px-6 md:px-16 py-2 text-center rounded-2xl `}
+        className={`block lg:hidden font-extrabold border-4 text-xl md:text-2xl border-rich-blue-border border-opacity-70 px-6 md:px-16 py-3 text-center rounded-2xl `}
       >
         {heading}
       </h1>
@@ -22,11 +22,11 @@ const EventCard = ({ heading, desc, img }: EventCardProps) => {
 
       <div className="flex flex-col gap-10 md:w-1/2 lg:justify-evenly items-start h-full lg:w-[45%] md:px-10">
         <h1
-          className={`hidden lg:block font-extrabold border-4 text-3xl border-rich-blue-border border-opacity-70  px-16 py-2 text-center rounded-2xl `}
+          className={`hidden lg:block font-extrabold border-4 text-2xl border-rich-blue-border border-opacity-70  px-5 py-3 text-center rounded-2xl `}
         >
           {heading}
         </h1>
-        <p>{desc}</p>
+        <p className="whitespace-pre-wrap font-medium text-xl">{desc}</p>
 
         <Button text="RSVP NOW" rounded={false} linkTo="/" />
       </div>
